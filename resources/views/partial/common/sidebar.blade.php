@@ -218,7 +218,7 @@
                 </ul>
             </li>
 
-            <li class="nav-item has-treeview">
+            {{-- <li class="nav-item has-treeview">
                 <a href="{{route('orders.index')}}" class="nav-link">
                     <i class="nav-icon fa fa-file-invoice-dollar"></i>
 
@@ -226,7 +226,7 @@
                         Quản lý đơn hàng
                     </p>
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item has-treeview">
                 <a href="{{route('design_orders.index')}}" class="nav-link">
                     <i class="nav-icon fa fa-file-invoice-dollar"></i>
