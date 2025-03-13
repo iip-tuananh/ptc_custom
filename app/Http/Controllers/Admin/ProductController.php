@@ -323,7 +323,13 @@ class ProductController extends Controller
     public function actDelete(Request $request) {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         $product_ids = explode(',', $request->product_ids);
-
+        foreach ($product_ids as $product_id) {
+            $product = ThisModel::findOrFail($product_id);
+            if($product->image) {
+                FileHelper::deleteFileFromCloudflare($product->image, $product->id, ThisModel::class, 'image');
+            }
+        }
+        
         Product::query()->whereIn('id', $product_ids)->delete();
 
         $message = array(

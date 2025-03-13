@@ -88,7 +88,7 @@ body {
   visibility: visible;
   overflow-x: hidden;
   color: #696969;
-  background-color: #FFFFFF;
+  background-color: #d3cbb7;
 }
 
 h1,
@@ -804,10 +804,10 @@ hr {
   z-index: 99;
   width: 100%;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgb(211 203 183 / 95%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -webkit-animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
-          animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
 }
 .sticky-header.dark-sticky-header.is-sticky {
   background-color: rgba(0, 0, 0, 0.95);

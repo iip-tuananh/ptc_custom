@@ -17,13 +17,13 @@
         <h4 class="product-card-title">
             <a href="{{route('front.show-product-detail', $product->slug)}}">{{$product->name}}</a>
         </h4>
-        <div class="product-card-price">
+        {{-- <div class="product-card-price">
             <span class="visually-hidden">Giá</span>
             @if ($product->base_price > 0)
             <span class="product-card-old-price"><del>{{formatCurrency($product->base_price)}}đ</del></span>
             @endif
             <span class="product-card-regular-price">{{formatCurrency($product->price)}}đ</span>
         </div>
-        <a href="javascript:void(0)" class="product-card-box-cart" ng-click="addToCart({{$product->id}})">Thêm vào giỏ hàng</a>
+        <a href="{{route('front.product-custom')}}?product_id={{$product->id}}" class="product-card-box-cart">Tạo thiết kế</a> --}}
     </div>
 </div>

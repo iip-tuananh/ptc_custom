@@ -155,11 +155,7 @@
                         data-bs-target="#offcanvas-mobile-menu">
                         <i class="icon-rt-bars-solid"></i>
                     </button> <!-- Mobile Menu Toggole Button End -->
-                    <!-- Search Button Start -->
-                    <button class="header-action-item d-md-none" title="Search" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
-                        <i class="icon-rt-loupe"></i>
-                    </button> <!-- Search Button End -->
+
                 </div>
                 <div class="col-4 col-lg-2 order-3 order-lg-3">
                     <!-- Heaer Action Area Start -->
@@ -168,11 +164,16 @@
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
                             <i class="icon-rt-loupe"></i>
                         </button>
-                        <button class="header-action-item" title="Cart Bag" type="button" data-bs-toggle="offcanvas"
+                        <!-- Search Button Start -->
+                        <button class="header-action-item d-md-none" title="Search" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
+                            <i class="icon-rt-loupe"></i>
+                        </button> <!-- Search Button End -->
+                        {{-- <button class="header-action-item" title="Cart Bag" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvas-cart">
                             <i class="icon-rt-bag-outline"></i>
                             <span class="header-action-item-count" ng-if="cart.count">(<% cart.count %>)</span>
-                        </button>
+                        </button> --}}
                     </div>
                     <!-- Heaer Action Area End -->
                 </div>

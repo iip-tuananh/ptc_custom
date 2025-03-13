@@ -95,12 +95,12 @@
                                 </div>
                                 <a href="#">(Đánh giá sản phẩm 5 sao)</a>
                             </div>
-                            <div class="product-card-price mt-2">
+                            {{-- <div class="product-card-price mt-2">
                                 @if($product->base_price > 0)
                                     <span class="product-card-old-price"><del>{{number_format($product->base_price)}}đ</del></span>
                                 @endif
                                 <span class="product-card-regular-price">{{number_format($product->price)}}đ</span>
-                            </div>
+                            </div> --}}
                             <p class="product-item-details-description mt-2">
                                 {!! $product->intro !!}
                             </p>
@@ -117,15 +117,15 @@
                             @endforeach
                             @endif
                             <div class="product-item-action-box d-flex gap-2 align-items-center">
-                                <form class="product-item-quantity">
+                                {{-- <form class="product-item-quantity">
                                     <button class="product-item-quantity-decrement product-item-quantity-button"
                                         type="button">-</button>
                                     <input type="text" class="product-item-quantity-input" name="quantity" ng-model="form.quantity"
                                         min="1" max="100" id="qty-input">
                                     <button class="product-item-quantity-increment product-item-quantity-button"
                                         type="button">+</button>
-                                </form>
-                                <button class="btn btn-primary btn-lg" ng-click="addToCartFromProductDetail()">Thêm vào giỏ hàng</button>
+                                </form> --}}
+                                {{-- <button class="btn btn-primary btn-lg" ng-click="addToCartFromProductDetail()">Thêm vào giỏ hàng</button> --}}
                                 <a class="btn btn-primary btn-lg" href="{{route('front.product-custom')}}?product_id={{ $product->id }}">Tạo thiết kế</a>
                             </div>
                             <div class="social-share-wrap d-flex gap-1 mt-3">

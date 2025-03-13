@@ -1348,7 +1348,10 @@ app.controller("DesignController", function($scope, $http) {
         let productBackLayer = backLayers.find(layer => layer.node.isBaseImage);
         if (!productFrontLayer) return;
         let imgNode = productFrontLayer.node;
-        let imgNodeBack = productBackLayer.node;
+        let imgNodeBack = null;
+        if (productBackLayer) {
+            imgNodeBack = productBackLayer.node;
+        }
 
         // Nếu chọn màu trắng, quay lại ảnh gốc
         if (color === "#fff") {
@@ -1376,17 +1379,20 @@ app.controller("DesignController", function($scope, $http) {
                 globalCompositeOperation: "multiply", // Hòa màu tự nhiên
                 listening: false
             });
-            $scope.colorOverlayBack = new Konva.Rect({
-                x: imgNodeBack.x(),
-                y: imgNodeBack.y(),
-                width: imgNodeBack.width(),
-                height: imgNodeBack.height(),
-                fill: color,
-                globalCompositeOperation: "multiply", // Hòa màu tự nhiên
-                listening: false
-            });
             frontLayer.add($scope.colorOverlay);
-            backLayer.add($scope.colorOverlayBack);
+
+            if (imgNodeBack) {
+                $scope.colorOverlayBack = new Konva.Rect({
+                    x: imgNodeBack.x(),
+                    y: imgNodeBack.y(),
+                    width: imgNodeBack.width(),
+                    height: imgNodeBack.height(),
+                    fill: color,
+                    globalCompositeOperation: "multiply", // Hòa màu tự nhiên
+                    listening: false
+                });
+                backLayer.add($scope.colorOverlayBack);
+            }
         }
 
         // Nếu chưa có lớp mask, tạo mới
@@ -1400,17 +1406,20 @@ app.controller("DesignController", function($scope, $http) {
                 globalCompositeOperation: "destination-in", // Giữ nét gốc
                 listening: false
             });
-            $scope.maskOverlayBack = new Konva.Image({
-                x: imgNodeBack.x(),
-                y: imgNodeBack.y(),
-                width: imgNodeBack.width(),
-                height: imgNodeBack.height(),
-                image: imgNodeBack.image(),
-                globalCompositeOperation: "destination-in", // Giữ nét gốc
-                listening: false
-            });
             frontLayer.add($scope.maskOverlay);
-            backLayer.add($scope.maskOverlayBack);
+
+            if (imgNodeBack) {
+                $scope.maskOverlayBack = new Konva.Image({
+                    x: imgNodeBack.x(),
+                    y: imgNodeBack.y(),
+                    width: imgNodeBack.width(),
+                    height: imgNodeBack.height(),
+                    image: imgNodeBack.image(),
+                globalCompositeOperation: "destination-in", // Giữ nét gốc
+                    listening: false
+                });
+                backLayer.add($scope.maskOverlayBack);
+            }
         }
 
         // Cập nhật màu
