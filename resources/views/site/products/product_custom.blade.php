@@ -42,14 +42,14 @@
     .sidebar ul {
         list-style: none;
         padding: 0;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
     }
     .sidebar ul li {
         display: block;
         padding: 10px;
         cursor: pointer;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #8e8e8e;
         font-size: 14px;
     }
     .sidebar ul li:hover {
@@ -76,7 +76,7 @@
         width: 500px;
         height: 500px;
         border-radius: 5px;
-        /* border: 1px solid #ccc; */
+        /* border: 1px solid #8e8e8e; */
     }
     .sidebar .menu-left li.item_text {
         position: relative;
@@ -89,7 +89,7 @@
         height: auto;
         background: #fff;
         display: none;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 100;
@@ -131,7 +131,7 @@
     #edit-text .modal-body .form-group .form-control {
         height: 30px;
         padding: 0 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         font-size: 14px;
     }
@@ -144,7 +144,7 @@
     #edit-text .modal-body .input-form-group .form-group #border-color {
         height: 30px;
         padding: 0;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         font-size: 14px;
     }
@@ -153,7 +153,7 @@
         width: 70%;
         height: 30px;
         padding: 0 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         font-size: 14px;
     }
@@ -180,7 +180,7 @@
     #edit-text #text-style .btn,
     #edit-text #text-align .btn {
         padding: 2px;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         background: none;
         color: #757575;
@@ -212,7 +212,7 @@
         color: #000;
     }
     #select-font .box-font {
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 4px;
         color: #666;
         cursor: pointer;
@@ -230,7 +230,7 @@
         border: 1px solid #007aff;
     }
     .list-layer {
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
     }
     .list-layer h5, .sidebar-right-info h5 {
@@ -261,7 +261,7 @@
         justify-content: space-between;
     }
     .list-layer ul li:first-child {
-        border-top: 1px solid #ccc !important;
+        border-top: 1px solid #8e8e8e !important;
     }
     .list-layer ul li:last-child {
         border-bottom: none !important;
@@ -278,7 +278,7 @@
     .btn-view-product {
         width: 100%;
         background-color: #fff;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
         padding: 10px;
         font-size: 14px;
@@ -325,7 +325,7 @@
         height: 80%;
     }
     .sidebar-right-info {
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
     }
     .btn-buy-product-now {
@@ -346,7 +346,7 @@
     .btn-toggle-side {
         width: 30%;
         background-color: #fff;
-        border: 1px solid #ccc;
+        border: 1px solid #8e8e8e;
         border-radius: 5px;
     }
     .btn-toggle-side:hover {
@@ -564,25 +564,25 @@
                         </div>
                         <div class="col-10 col-md-10" style="padding-left: 0;">
                             <div class="d-flex" style="gap: 10px">
-                                <button ng-click="uploadImage()" class="btn btn-default btn-view-product" ng-disabled="!product_id">Xem thiết kế</button>
+                                <button class="btn btn-default btn-view-product" ng-disabled="!product_id">Xem thiết kế</button>
                                 <button ng-click="exportFile()" class="btn btn-default btn-view-product" ng-disabled="!product_id">Xuất file</button>
                             </div>
                             <div class="sidebar-right-info mt-2">
-                                <h5 style="border-bottom: 1px solid #ccc;">Lựa chọn sản phẩm</h5>
+                                <h5 style="border-bottom: 1px solid #8e8e8e;">Lựa chọn sản phẩm</h5>
                                 <div class="p-2" >
                                     <div class="title-color-product mb-2">
                                         <span><span class="text-danger">(*)</span> Chọn màu sắc sản phẩm</span>
                                     </div>
-                                    <div class="group-color-box pb-2" style="border-bottom: 1px dashed #ccc;">
-                                        <div ng-click="updateColorProduct('#FFFFFF')" class="color-box" ng-class="{'active': colorProduct == '#FFFFFF'}" style="background-color: #FFFFFF; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu trắng"></div>
-                                        <div ng-click="updateColorProduct('#000000')" class="color-box" ng-class="{'active': colorProduct == '#000000'}" style="background-color: #000000; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu đen"></div>
-                                        <div ng-click="updateColorProduct('#800000')" class="color-box" ng-class="{'active': colorProduct == '#800000'}" style="background-color: #800000; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu đỏ đô"></div>
-                                        <div ng-click="updateColorProduct('#FFA500')" class="color-box" ng-class="{'active': colorProduct == '#FFA500'}" style="background-color: #FFA500; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu cam"></div>
-                                        <div ng-click="updateColorProduct('#FFD700')" class="color-box" ng-class="{'active': colorProduct == '#FFD700'}" style="background-color: #FFD700; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu vàng"></div>
-                                        <div ng-click="updateColorProduct('#D4AF37')" class="color-box" ng-class="{'active': colorProduct == '#D4AF37'}" style="background-color: #D4AF37; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu vàng gold"></div>
-                                        <div ng-click="updateColorProduct('#000080')" class="color-box" ng-class="{'active': colorProduct == '#000080'}" style="background-color: #000080; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu xanh navy"></div>
-                                        <div ng-click="updateColorProduct('#90EE90')" class="color-box" ng-class="{'active': colorProduct == '#90EE90'}" style="background-color: #90EE90; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu xanh lá nhạt"></div>
-                                        <div ng-click="updateColorProduct('#8B4513')" class="color-box" ng-class="{'active': colorProduct == '#8B4513'}" style="background-color: #8B4513; border: 1px solid #ccc; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu nâu"></div>
+                                    <div class="group-color-box pb-2" style="border-bottom: 1px dashed #8e8e8e;">
+                                        <div ng-click="updateColorProduct('#FFFFFF')" class="color-box" ng-class="{'active': colorProduct == '#FFFFFF'}" style="background-color: #FFFFFF; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu trắng"></div>
+                                        <div ng-click="updateColorProduct('#000000')" class="color-box" ng-class="{'active': colorProduct == '#000000'}" style="background-color: #000000; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu đen"></div>
+                                        <div ng-click="updateColorProduct('#800000')" class="color-box" ng-class="{'active': colorProduct == '#800000'}" style="background-color: #800000; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu đỏ đô"></div>
+                                        <div ng-click="updateColorProduct('#FFA500')" class="color-box" ng-class="{'active': colorProduct == '#FFA500'}" style="background-color: #FFA500; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu cam"></div>
+                                        <div ng-click="updateColorProduct('#FFD700')" class="color-box" ng-class="{'active': colorProduct == '#FFD700'}" style="background-color: #FFD700; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu vàng"></div>
+                                        <div ng-click="updateColorProduct('#D4AF37')" class="color-box" ng-class="{'active': colorProduct == '#D4AF37'}" style="background-color: #D4AF37; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu vàng gold"></div>
+                                        <div ng-click="updateColorProduct('#000080')" class="color-box" ng-class="{'active': colorProduct == '#000080'}" style="background-color: #000080; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu xanh navy"></div>
+                                        <div ng-click="updateColorProduct('#90EE90')" class="color-box" ng-class="{'active': colorProduct == '#90EE90'}" style="background-color: #90EE90; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu xanh lá nhạt"></div>
+                                        <div ng-click="updateColorProduct('#8B4513')" class="color-box" ng-class="{'active': colorProduct == '#8B4513'}" style="background-color: #8B4513; border: 1px solid #8e8e8e; width: 30px; height: 30px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Màu nâu"></div>
                                     </div>
                                     <div class="title-color-product mb-2 mt-2">
                                         <span><span class="text-danger">(*)</span> Kích thước (cm)</span>
@@ -597,7 +597,7 @@
                                             <input type="number" class="form-control" ng-model="sizeProduct['width']" min="0">
                                         </div>
                                     </div>
-                                    <div class="form-group width-100 mb-2 pb-2" style="gap: 10px; border-bottom: 1px dashed #ccc;">
+                                    <div class="form-group width-100 mb-2 pb-2" style="gap: 10px; border-bottom: 1px dashed #8e8e8e;">
                                         <label for="size-product">Chiều cao (đối với túi hộp)</label>
                                         <input type="number" class="form-control" ng-model="sizeProduct['height']" min="0">
                                     </div>
@@ -653,7 +653,7 @@
                                             <option value="7mm">7mm</option>
                                         </select>
                                     </div>
-                                    <div class="form-group width-100 mb-2 pb-2" style="border-bottom: 1px dashed #ccc;">
+                                    <div class="form-group width-100 mb-2 pb-2" style="border-bottom: 1px dashed #8e8e8e;">
                                         <label for="size-product">Loại viền</label>
                                         <select class="form-control select2" ng-model="product_attributes['shoe_border']">
                                             <option value="">Chọn loại viền</option>
@@ -665,7 +665,7 @@
                                     {{-- <div class="title-color-product mb-2 mt-2">
                                         <span><span class="text-danger">(*)</span> Size</span>
                                     </div>
-                                    <div class="group-size-box d-flex flex-wrap mb-2 pb-2" style="gap: 10px; border-bottom: 1px dashed #ccc;">
+                                    <div class="group-size-box d-flex flex-wrap mb-2 pb-2" style="gap: 10px; border-bottom: 1px dashed #8e8e8e;">
                                         <div class="form-group width-30">
                                             <label for="size-product">S</label>
                                             <input type="number" class="form-control" ng-model="sizeProduct['S']" min="0">
