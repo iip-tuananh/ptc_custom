@@ -397,7 +397,7 @@
                                 </a>
                             </li>
 
-                            <li class="item_text" ng-disabled="!product_id">
+                            <li class="item_text" ng-if="product_id">
                                 <a href="javascript:void(0);" class="add_item_text" title="" ng-click="addText()">
                                     <i class="fa-solid fa-text-height"></i> <span>Thêm Text</span>
                                 </a>
@@ -477,8 +477,8 @@
                                 </div>
                             </li>
 
-                            <li>
-                                <a href="javascript:void(0);" class="add_item_clipart" title="" ng-click="uploadImage()" ng-disabled="!product_id">
+                            <li ng-if="product_id">
+                                <a href="javascript:void(0);" class="add_item_clipart" title="" ng-click="uploadImage()">
                                     <i class="fa-solid fa-cloud-arrow-up"></i> <span>Tải hình logo lên</span>
                                 </a>
                             </li>
