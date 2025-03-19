@@ -393,11 +393,11 @@
                         <ul class="menu-left">
                             <li>
                                 <a href="javascript:void(0);" class="view_change_products" title="" ng-click="changeProduct()">
-                                    <i class="fa-solid fa-shirt"></i> <span>Chọn sản phẩm</span>
+                                    <i class="fa-solid fa-shirt"></i> <span>Chọn sản phẩm mẫu</span>
                                 </a>
                             </li>
 
-                            <li class="item_text">
+                            <li class="item_text" ng-disabled="!product_id">
                                 <a href="javascript:void(0);" class="add_item_text" title="" ng-click="addText()">
                                     <i class="fa-solid fa-text-height"></i> <span>Thêm Text</span>
                                 </a>
@@ -478,8 +478,8 @@
                             </li>
 
                             <li>
-                                <a href="javascript:void(0);" class="add_item_clipart" title="" ng-click="uploadImage()">
-                                    <i class="fa-solid fa-cloud-arrow-up"></i> <span>Tải hình ảnh lên</span>
+                                <a href="javascript:void(0);" class="add_item_clipart" title="" ng-click="uploadImage()" ng-disabled="!product_id">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i> <span>Tải hình logo lên</span>
                                 </a>
                             </li>
                         </ul>
