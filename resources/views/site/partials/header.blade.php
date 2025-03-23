@@ -37,34 +37,17 @@
                             </a>
                         </div>
                     </div>
-                    {{-- <div class="header-top-area-right-side d-flex">
-                        <div class="header-top-area-right-side-item">
-                            <a href="#login-form-popup-actiove" data-bs-toggle="modal">
-                                <i class="icon-rt-user"></i>
-                                Sign in
-                            </a>
-                        </div>
+                    <div class="header-top-area-right-side d-flex">
                         <ul class="header-top-area-right-side-item top-bar-item-menu">
                             <li>
                                 <a href="#">Languages <i class="icon-rt-arrow-down"></i></a>
                                 <ul class="top-bar-item-menu-dropdow">
-                                    <li><a href="#" class="active">English</a></li>
-                                    <li><a href="#">Germany</a></li>
-                                    <li><a href="#">France</a></li>
+                                    <li><a href="javascript:;" onclick="translateheader('en')"><img width="30" src="{{url('/site/images/flag_en.png')}}" alt="" loading="lazy"> English</a></li>
+                                    <li><a href="javascript:;" onclick="translateheader('vi')"><img width="30" src="{{url('/site/images/flag_vn.png')}}" alt="" loading="lazy"> Vietnamese</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="header-top-area-right-side-item top-bar-item-menu">
-                            <li>
-                                <a href="#">Currencies <i class="icon-rt-arrow-down"></i></a>
-                                <ul class="top-bar-item-menu-dropdow">
-                                    <li><a href="#" class="active">USD</a></li>
-                                    <li><a href="#">Euro</a></li>
-                                    <li><a href="#">GBP</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>

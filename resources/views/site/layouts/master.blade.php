@@ -421,6 +421,7 @@
         </div>
     </div>
     <!-- Product Modal End -->
+
     <!-- JS Vendor, Plugins & Activation Script Files -->
     <!-- Vendors JS -->
     <script src="{{ env('AWS_R2_URL') }}/site/js/modernizr-3.11.7.min.js"></script>
@@ -431,6 +432,49 @@
     <script src="{{ env('AWS_R2_URL') }}/site/js/ajax.js"></script>
     <!-- Activation JS -->
     <script src="{{ env('AWS_R2_URL') }}/site/js/main.js"></script>
+
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'vi',includedLanguages:'en,vi', }, 'translate_select');
+        }
+    </script>
+    <div id="translate_select" style="display: none;"></div>
+    <style>
+        #goog-gt-tt {
+            display: none !important;
+        }
+        /* iframe.skiptranslate {
+            display: none !important;
+        }
+        .skiptranslate {
+            display: none !important;
+        } */
+    </style>
+    <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script>
+        function translateheader(lang){
+            var languageSelect = document.querySelector("select.goog-te-combo");
+            languageSelect.value = lang;
+            languageSelect.dispatchEvent(new Event("change"));
+        }
+        function scrollHiddenTranslate() {
+            var frame = document.querySelector("iframe.skiptranslate");
+            if (frame) {
+                if (window.scrollY > 100) {
+                    frame.style.display = "none";
+                } else {
+                    frame.style.display = "block";
+                }
+            }
+        }
+
+        window.addEventListener("scroll", scrollHiddenTranslate);
+        scrollHiddenTranslate();
+    </script>
+
 </body>
 
 </html>
