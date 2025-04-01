@@ -66,7 +66,7 @@
                     </div>
                     <!-- Logo Start -->
                 </div>
-                <div class="col-4 col-lg-8 order-1 order-lg-2">
+                <div class="col-4 col-lg-9 order-1 order-lg-2">
                     <!-- Main Menu Area Start -->
                     <nav class="nav-main-menu d-none d-lg-block">
                         <!-- Main Menu Start -->
@@ -140,7 +140,7 @@
                     </button> <!-- Mobile Menu Toggole Button End -->
 
                 </div>
-                <div class="col-4 col-lg-2 order-3 order-lg-3">
+                <div class="col-4 col-lg-1 order-3 order-lg-3">
                     <!-- Heaer Action Area Start -->
                     <div class="header-action d-flex justify-content-end">
                         <button class="header-action-item d-none d-md-block" title="Search" type="button"
