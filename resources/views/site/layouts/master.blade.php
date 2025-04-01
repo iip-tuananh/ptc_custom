@@ -467,7 +467,7 @@
                 <img class="inner-fab-icon" src="/site/images/zalo.png" alt="chat-active-icon"
                     border="0" loading="lazy">
             </a>
-            <a target="blank" href="https://www.google.com/maps/place/{{ $config->address_company }}" class="fabs roundCool" id="chat-fab"
+            <a target="blank" href="https://maps.app.goo.gl/YXMwmkUUM6o2Abov5" class="fabs roundCool" id="chat-fab"
                 data-tooltip="View map">
                 <img class="inner-fab-icon" src="/site/images/map.png" alt="chat-active-icon"
                     border="0" loading="lazy">
@@ -487,7 +487,7 @@
                     <span class="azt-contact-footer-btn-label">Menu</span>
                 </span>
             </a>
-            <a href="https://maps.app.goo.gl/aJYeaHXBZYXG4gQ89">
+            <a href="https://maps.app.goo.gl/YXMwmkUUM6o2Abov5">
                 <span>
                     <img src="/site/images/map.png" alt="Map">
                     <span class="azt-contact-footer-btn-label">Map</span>
