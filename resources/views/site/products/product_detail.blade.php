@@ -126,6 +126,7 @@
                                         type="button">+</button>
                                 </form> --}}
                                 {{-- <button class="btn btn-primary btn-lg" ng-click="addToCartFromProductDetail()">Thêm vào giỏ hàng</button> --}}
+                                <a class="btn btn-primary btn-lg" href="tel:{{ str_replace(' ', '', $config->hotline) }}">Liên hệ ngay</a>
                                 <a class="btn btn-primary btn-lg" href="{{route('front.product-custom')}}?product_id={{ $product->id }}">Tạo thiết kế</a>
                             </div>
                             <div class="social-share-wrap d-flex gap-1 mt-3">

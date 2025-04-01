@@ -737,10 +737,10 @@ hr {
 ----------------------------*/
 .logo a {
   display: inline-block;
-  padding: 10px 0;
+  padding: 2px 0;
 }
 .logo a img {
-  max-width: 110px;
+  max-width: 130px;
   width: 100%;
 }
 
@@ -771,7 +771,7 @@ hr {
   color: #313030;
 }
 .header-action-item .icon-rt-loupe {
-  font-size: 21px;
+  font-size: 23px;
 }
 .header-action-item-count {
   font-size: 13px;
@@ -842,7 +842,7 @@ hr {
   color: #000000;
   padding: 22px 0px;
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.18;
   transition: all 0s ease-in-out;
